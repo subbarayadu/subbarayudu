@@ -3,8 +3,7 @@ import numpy as np
 class Sudoku:
     def __init__(self, board=None):
         if board is None:
-            self.board =np.zeros((9,9),dtype=int)
-            [
+            self.board =np.array([
                 [0, 0, 6, 0, 0, 0, 5, 0, 8],
                 [1, 0, 2, 3, 8, 0, 0, 0, 4],
                 [0, 0, 0, 2, 0, 0, 1, 9, 0],
@@ -14,7 +13,7 @@ class Sudoku:
                 [0, 8, 7, 0, 0, 4, 0, 0, 0],
                 [2, 0, 0, 0, 9, 8, 4, 0, 7],
                 [4, 0, 9, 0, 0, 0, 3, 0, 0],
-            ]
+            ]) 
         else:
             self.board = np.array(board)
 
